@@ -1,6 +1,6 @@
 import SequelizeCtx = require('sequelize')
 
-export function GameModel(sequelize: SequelizeCtx.Sequelize): SequelizeCtx.Model<{}, {}> {
+export function GameDefinition(sequelize: SequelizeCtx.Sequelize): SequelizeCtx.Model<{}, {}> {
     return sequelize.define('Game',
         {
             id: { type: SequelizeCtx.BIGINT, primaryKey: true },
